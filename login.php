@@ -35,7 +35,8 @@ $koneksi = new mysqli("localhost", "root", "", "kasir");
                 <p class="login-box-msg">Masukkan username Dan Password Yang Sesuai</p>
 
                 <form method="post">
-                    <div class="input-group mb-3">
+                    <div class="input-g
+                    roup mb-3">
                         <input type="name" class="form-control" placeholder="USERNAME" name="USERNAME">
                         <div class="input-group-append input-group-text">
                             <span class="fas fa-envelope"></span>
@@ -62,7 +63,7 @@ $koneksi = new mysqli("localhost", "root", "", "kasir");
 
                     if ($yangcocok == 1) {
 
-                        $_SESSION['admin'] = $ambil->fetch_assoc();
+                        $_SESSION['admin'] = "fff";
                         echo "<br>";
                         echo "<div class='alert alert-info'>Login Sukses</div>";
                         echo "<meta http-equiv='refresh' content='1;url=dashboard.php'>";

@@ -1,3 +1,13 @@
+<?php
+
+$koneksi = new mysqli("localhost", "root", "", "kasir");
+if (!isset($_SESSION['admin'])) {
+    echo "<script>alert('Anda Harus Login Terlebih Dahulu');</script>";
+    echo "<script>location='login';</script>";
+    header('Location:login.php');
+    exit();
+}
+?>
 <!doctype html>
 <html lang="en">
 
